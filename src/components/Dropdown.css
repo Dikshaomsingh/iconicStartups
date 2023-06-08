@@ -1,0 +1,97 @@
+.menuItems{
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 18px !important;
+    color: whitesmoke !important;
+    padding: 0 10px;
+}
+
+.menuLabel {
+    width: 100%;
+    height: 100%;
+}
+
+.subMenu{
+    background-color: beige;
+    z-index: 10;
+    flex-direction: row;
+    left: -15px;
+    right: -15px;
+    min-width: 200px;
+    padding: 55px 43px 60px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 5px 5.16px 0.84px rgba(0,0,0,.1);
+    margin-top: 1px;
+    border: 2px solid #838586;
+    width:max-content;
+}
+
+.userLoginSubMenu{
+    background-color: beige;
+    z-index: 10;
+    flex-direction: row;
+    right: -15px;
+    min-width: 200px;
+    padding: 55px 43px 60px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 5px 5.16px 0.84px rgba(0,0,0,.1);
+    margin-top: 1px;
+    border: 2px solid #838586;
+    width:max-content;
+}
+.subMenuList{
+    list-style-type: square;
+    color: black;
+}
+
+.subMenuItems {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+
+.menuItems.subMenu.subMenuItems:hover,
+.menuItems.subMenu.subMenuItems:focus {
+    color: rgb(8, 8, 8);
+    background: #838586;
+}
+
+/* *[data-tooltip] {
+    position: relative;
+}
+
+*[data-tooltip]::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    right: -15px;
+
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    background: #fefdcd;
+    padding: 2px 2px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+}
+*[data-tooltip]:hover::after {
+    opacity: 100;
+} */

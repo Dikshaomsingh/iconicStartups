@@ -1,0 +1,131 @@
+/* Base */
+  .cardBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+
+  }
+  
+  /* Container */
+  .cardContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    @media (max-width: 900px) {
+      & {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      & {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+      }
+    }
+  }
+  
+  /* Column */
+  .cardColumn {
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);    
+    
+    @media (max-width: 900px) {
+      & {
+        flex-basis: 50%;
+        width: 50%;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      & {
+        flex-basis: 100%;
+        width: 100%;
+      }
+    }
+  }
+  
+  /* Article (Component) */
+  .article {
+    background: #FFF;
+    margin: 0 0 20px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(#000, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 2px 4px rgba(#000, 0.2),
+        0 4px 8px rgba(#000, 0.2);
+    }
+    
+    &:active {
+      box-shadow: none;
+      transform-origin: center;
+      transform: scale(0.98);
+    }
+    
+    &__category {
+      display: inline-block;
+      /* // background: #212121; */
+      padding: 8px 10px;
+      margin: 0 0 10px;
+      color: #FFF;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.075rem;
+      text-transform: uppercase;
+    }
+    
+    /* &__date {} */
+    
+    &__excerpt {
+      color: #666;
+      line-height: 1.5rem;
+      font-size: 0.875rem;
+    }
+    
+    &__title {
+      margin: 0 0 10px;
+      color: #444;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.75rem;
+    }
+  }
+
+  .learnBtn {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
